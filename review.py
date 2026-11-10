@@ -1,11 +1,4 @@
-#!/usr/bin/env python3
-"""Local AI code review.
-
-git diff -> LLM (any OpenAI-compatible API) -> validated JSON findings.
-Standard library only. The backend is chosen by environment variables, so the same
-script runs against Ollama locally, or Groq / OpenRouter / any server later.
-
-Env vars (all optional):
+"""Env vars (all optional):
   REVIEW_BASE_URL        default http://localhost:11434/v1   (Ollama)
   REVIEW_MODEL           default qwen2.5-coder:7b
   REVIEW_API_KEY         default empty (Ollama needs none)

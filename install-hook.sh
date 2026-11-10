@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-# Installs a local pre-push hook that runs the AI review.
-# Advisory by default: it never blocks a push unless you set REVIEW_FAIL_ON=high (or medium/low).
-# Run once from inside your repo:  bash ai-review/install-hook.sh
 set -euo pipefail
 
 root=$(git rev-parse --show-toplevel)
