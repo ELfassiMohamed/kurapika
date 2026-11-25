@@ -46,7 +46,7 @@ def test_agent_brain():
     response = client.complete(
         messages=messages,
         tools=[mock_tool],
-        model="Phi-3.5-mini-instruct" # Must exactly match your deployment name
+        model="Phi-4-mini-instruct" # Must exactly match your deployment name
     )
 
     choice = response.choices[0]
